@@ -5,7 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dexter Zhuo Kai Yao | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Clean grid layout optimized for text-only project display */
+        .project-card-flex {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        .project-info {
+            flex: 1;
+        }
+        @media (max-width: 768px) {
+            .project-card-flex {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -129,33 +146,59 @@
         <div class="container">
             <span class="section-label">Selected Projects</span>
             <div class="project-stack">
+
+                <div class="project-card project-card-flex">
+                    <div class="project-info">
+                        <span class="proj-category">AUTONOMOUS SYSTEMS & HMI</span>
+                        <h3>Temi Robot Campus Navigator</h3>
+                        <p>Programmed an interactive roadmap and autonomous navigation sequence for the Temi robot during the NYP Open House. Developed interactive control scripts to guide visitors through campus blocks while dynamically explaining school layouts and delivering tailored overviews of what prospective juniors will learn when they join the diploma program.</p>
+                        <div class="tags"><span>Autonomous Navigation</span> <span>HMI Integration</span> <span>Robotics</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card project-card-flex">
+                    <div class="project-info">
+                        <span class="proj-category">MECHANICAL DESIGN & CAD</span>
+                        <h3>Parametric Robot Arm & Base Frame</h3>
+                        <p>Designed and modeled a multi-axis robotic arm system as a core class engineering project using Autodesk Inventor. Engineered the reaching gripper mechanisms and structural base frame components from the ground up, successfully satisfying geometric constraints and load condition benchmarks through virtual stress analysis and parametric validation.</p>
+                        <div class="tags"><span>Autodesk Inventor</span> <span>CAD Modeling</span> <span>Mechanism Design</span></div>
+                    </div>
+                </div>
                 
-                <div class="project-card">
-                    <span class="proj-category">HARDWARE & FIRMWARE</span>
-                    <h3>Manikin Project</h3>
-                    <p>Interactive mannequin system featuring custom C++ firmware for stepper motor and LED PWM control.</p>
-                    <div class="tags"><span>C++</span> <span>ESP32</span> <span>Hardware</span></div>
+                <div class="project-card project-card-flex">
+                    <div class="project-info">
+                        <span class="proj-category">HARDWARE & FIRMWARE</span>
+                        <h3>Manikin Project</h3>
+                        <p>Interactive mannequin system featuring custom C++ firmware for stepper motor and LED PWM control.</p>
+                        <div class="tags"><span>C++</span> <span>ESP32</span> <span>Hardware</span></div>
+                    </div>
                 </div>
 
-                <div class="project-card">
-                    <span class="proj-category">CAD DESIGN</span>
-                    <h3>WHOOP Wearable Attachment</h3>
-                    <p>Parametric CAD design for a custom WHOOP fitness tracker mount, optimized for ergonomics.</p>
-                    <div class="tags"><span>Onshape</span> <span>CAD</span> <span>Mechanics</span></div>
+                <div class="project-card project-card-flex">
+                    <div class="project-info">
+                        <span class="proj-category">CAD DESIGN</span>
+                        <h3>WHOOP Wearable Attachment</h3>
+                        <p>Parametric CAD design for a custom WHOOP fitness tracker mount, optimized for ergonomics.</p>
+                        <div class="tags"><span>Onshape</span> <span>CAD</span> <span>Mechanics</span></div>
+                    </div>
                 </div>
 
-                <div class="project-card">
-                    <span class="proj-category">HARDWARE & CODING</span>
-                    <h3>2024 Security System</h3>
-                    <p>An Arduino project created during my first semester of poly. A system designed to lock all doors automatically and alert authorities if an intruder enters the home.</p>
-                    <div class="tags"><span>Arduino</span> <span>C++</span> <span>Security</span></div>
+                <div class="project-card project-card-flex">
+                    <div class="project-info">
+                        <span class="proj-category">HARDWARE & CODING</span>
+                        <h3>2024 Security System</h3>
+                        <p>An Arduino project created during my first semester of poly. A system designed to lock all doors automatically and alert authorities if an intruder enters the home.</p>
+                        <div class="tags"><span>Arduino</span> <span>C++</span> <span>Security</span></div>
+                    </div>
                 </div>
 
-                <div class="project-card">
-                    <span class="proj-category">MECHANICAL</span>
-                    <h3>Launcher for Ping Pong 2024</h3>
-                    <p>My team and I created a ping pong launcher for training use. We constructed this launcher using Lego components based on several concepts we developed.</p>
-                    <div class="tags"><span>Mechanics</span> <span>Prototyping</span> <span>Teamwork</span></div>
+                <div class="project-card project-card-flex">
+                    <div class="project-info">
+                        <span class="proj-category">MECHANICAL</span>
+                        <h3>Launcher for Ping Pong 2024</h3>
+                        <p>My team and I created a ping pong launcher for training use. We constructed this launcher using Lego components based on several concepts we developed.</p>
+                        <div class="tags"><span>Mechanics</span> <span>Prototyping</span> <span>Teamwork</span></div>
+                    </div>
                 </div>
 
             </div>
